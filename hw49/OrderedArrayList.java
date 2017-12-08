@@ -72,9 +72,9 @@ public class OrderedArrayList
     // addBin() employs a binary search to locate the point of insertion for a new element.
     public void addBin( Comparable newVal )
     {
-	int maxI = _data.size() - 1; // max value's index
-	int minI = 0;// min value's index
-	int avgI = (int)((maxI + minI)/2);// index of halfway value in OrderedArrayList
+	int maxI = _data.size() - 1; // max index in range
+	int minI = 0;// min index in range
+	int avgI = (int)((maxI + minI)/2);// index of halfway value of range 
 	
 	// If the center value is equivalent to the newVal, insert the newVal in center value's place
 	if (newVal.compareTo(_data.get(avgI)) == 0){
